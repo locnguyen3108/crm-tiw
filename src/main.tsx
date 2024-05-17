@@ -16,7 +16,7 @@ const queryClient = new QueryClient({
 })
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename='/crm-tiw/'>
       <QueryClientProvider client={queryClient}>
         <AppProvider>
           <App />
