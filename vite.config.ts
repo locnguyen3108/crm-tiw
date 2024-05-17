@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react-swc'
 import path from 'path'
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/crm-procast/',
+  base: '',
   plugins: [react()],
   server: {
     port: 3000
