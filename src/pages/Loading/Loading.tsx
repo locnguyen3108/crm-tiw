@@ -15,8 +15,10 @@ export default function Loading() {
   const navigate = useNavigate()
   const startDate = useFirstDayOfMonth()
   const endDate = useLastDayOfMonth()
-  const postCallback = async (code: string) => {
-    const response = await http.post(`/e/v1/callback?code=${code}`)
+  const postCallback = async (params: URLSearchParams) => {
+    const response = await http.post('/e/v1/callback', null, {
+      params
+    })
     return response.data
   }
   const usePostCallback = (onSuccess: (data: any) => void, onError: (error: any) => void) => {
@@ -47,9 +49,9 @@ export default function Loading() {
     const code = queryParams.get('code')
 
     if (code) {
-      mutation.mutate(code)
+      mutation.mutate(queryParams)
     }
-  }, [location.search, mutation])
+  }, [])
   console.log(queryParams)
 
   return <div>Loading...</div>
