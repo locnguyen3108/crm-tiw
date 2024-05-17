@@ -28,7 +28,7 @@ import SubSessions from './pages/SubSessions'
 import TuitionPayment from './pages/TuitionPayment'
 import Report from './pages/Report'
 import Loading from './pages/Loading/Loading'
-const isAuthenticated = true
+const isAuthenticated = false
 function ProtectedRoute() {
   // const { isAuthenticated } = useContext(AppConxtext)
   // console.log(isAuthenticated)
