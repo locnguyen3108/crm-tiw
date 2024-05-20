@@ -1,6 +1,7 @@
 {
   "name": "tiw-frontend",
   "private": true,
+  "homepage": "https://locnguyen3108.github.io/crm-tiw/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
