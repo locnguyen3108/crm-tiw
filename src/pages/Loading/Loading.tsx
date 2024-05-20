@@ -28,6 +28,7 @@ export default function Loading() {
     })
   }
   const onSuccess = (data: any) => {
+    console.log(data)
     setIsAuthenticated(true)
     setProfile(data.data.data.user)
     toast.success('Create new user successful')
@@ -42,6 +43,7 @@ export default function Loading() {
   const onError = (error: any) => {
     console.error('Error:', error)
     // Handle error (e.g., show an error message)
+    console.log("Load error")
   }
   const mutation = usePostCallback(onSuccess, onError)
   useEffect(() => {
