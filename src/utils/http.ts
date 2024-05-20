@@ -12,7 +12,7 @@ class Http {
     this.accessToken = getAccessTokenFromLS()
     this.profile = getProfileFromLS()
     this.instance = axios.create({
-      baseURL: 'http://34.47.130.190/',
+      baseURL: 'http://34.47.130.190:80/',
       timeout: 10000000,
       headers: {
         'Content-Type': contenttype
