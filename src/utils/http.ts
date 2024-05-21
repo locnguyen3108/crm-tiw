@@ -12,6 +12,7 @@ class Http {
     this.accessToken = getAccessTokenFromLS()
     this.profile = getProfileFromLS()
     this.instance = axios.create({
+      baseURL: 'http://34.93.61.167:80/',
       baseURL: 'http://34.93.61.167/',
       timeout: 10000000,
       headers: {

@@ -92,6 +92,8 @@ export default function Login() {
             <div className='flex  justify-center align=center'>
               <Button
                 type='primary'
+
+                href='http://34.93.61.167:80/e/v1/login-third-party'
                 href='http://34.93.61.167/e/v1/login-third-party'
                 target='blank'
                 className='w-3/4 h-auto text-lg
