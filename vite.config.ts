@@ -6,7 +6,7 @@ export default defineConfig({
   base: 'crm-tiw',
   plugins: [react()],
   server: {
-    port: 3000
+    port: 3031
   },
   css: {
     devSourcemap: true

@@ -2,7 +2,7 @@
   "name": "tiw-frontend",
   "homepage": "https://locnguyen3108.github.io/crm-tiw/",
   "private": true,
-  "homepage": "https://locnguyen3108.github.io/crm-tiw/",
+  "proxy": "http://localhost:3031",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
