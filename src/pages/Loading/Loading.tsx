@@ -6,10 +6,7 @@ import path from '~/constants/path'
 import { AppConxtext } from '~/contexts/app.context'
 import useFirstDayOfMonth from '~/hooks/useFirstDayOfMonth'
 import useLastDayOfMonth from '~/hooks/useLastDayOfMonth'
-import { ErrorResponse } from '~/types/utils.type'
-// import useQueryParams from '~/hooks/useQueryParams'
 import http from '~/utils/http'
-import { isAxiosUnprocessableEntity } from '~/utils/utils'
 
 export default function Loading() {
   const { setIsAuthenticated, setProfile } = useContext(AppConxtext)
